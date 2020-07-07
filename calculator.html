@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<script type="text/javascript">
+		//var num1=prompt('Enter first new Number');
+		//var num2=prompt('Enter second Number');
+		function show(){
+			var num1=parseInt(document.myform.num1.value);
+			var num2=parseInt(document.myform.num2.value);
+
+	    var sum=num1+num2;
+		var sub=num1-num2;
+		var mul=num1*num2;
+		var div=num1/num2;
+		alert(num1+"=>"+num2+"=>"+sum+"=>"+sub+"=>"+mul+"=>"+div+"=>"+mod
+			);
+		if(sum>50){
+			alert('Sun is over 50');}
+
+		}else if (sum<50) {
+			alert('Sun is under 50');}
+			
+		
+		else {
+			alert('Sun is  50');
+		
+		}
+		
+		//console.log(num1+"=>")
+	</script>
+</head>
+<body>
+	<h1>Calculator</h1>
+	<form name="myform">
+		First Number:<input type="Number" name="num1"><br>
+		Second Number:<input type="Number" name="num2"><br>
+		<button onclick="show()">Calculator
+		</button>
+
+	</form>
+
+</body>
+</html>
